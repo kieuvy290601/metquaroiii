@@ -13,7 +13,7 @@ $mobile=$_POST['phone'];
 $address1=$_POST['city'];
 $address2=$_POST['country'];
 
-mysqli_query($con,"insert into user_info(first_name, last_name,email,password,mobile,address1,address2) values ('$first_name','$last_name','$email','$user_password','$mobile','$address1','$address2')") 
+mysqli_query($con,"INSERT INTO user_info (first_name, last_name,email,password,mobile,address1,address2) values ('$first_name','$last_name','$email','$user_password','$mobile','$address1','$address2')") 
 			or die ("Query 1 is inncorrect........");
 header("location: manage_users.php"); 
 mysqli_close($con);
@@ -87,7 +87,8 @@ mysqli_close($con);
                     </div>
                     
                     <button type="submit" name="btn_save" id="btn_save" class="btn btn-primary pull-right">Update User</button>
-                    <div class="clearfix"></div>
+                    
+                    <div class="clearfix"d></div>
                   </form>
                 </div>
               </div>
